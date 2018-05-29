@@ -14,6 +14,8 @@
 		34264D4220B3DD2000C43B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34264D4020B3DD2000C43B02 /* LaunchScreen.storyboard */; };
 		34264D4D20B3DD2000C43B02 /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34264D4C20B3DD2000C43B02 /* ____Tests.swift */; };
 		34264D5820B3DD2000C43B02 /* ____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34264D5720B3DD2000C43B02 /* ____UITests.swift */; };
+		34264DAA20BD1C1F00C43B02 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34264DA920BD1C1F00C43B02 /* Notification.swift */; };
+		34264DAC20BD1D2800C43B02 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34264DAB20BD1D2800C43B02 /* Draw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		34264D5320B3DD2000C43B02 /* 日常技巧UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "日常技巧UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34264D5720B3DD2000C43B02 /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
 		34264D5920B3DD2000C43B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34264DA920BD1C1F00C43B02 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		34264DAB20BD1D2800C43B02 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				34264D3720B3DD1F00C43B02 /* AppDelegate.swift */,
 				34264D3920B3DD1F00C43B02 /* ViewController.swift */,
+				34264DA920BD1C1F00C43B02 /* Notification.swift */,
+				34264DAB20BD1D2800C43B02 /* Draw.swift */,
 				34264D3B20B3DD1F00C43B02 /* Main.storyboard */,
 				34264D3E20B3DD2000C43B02 /* Assets.xcassets */,
 				34264D4020B3DD2000C43B02 /* LaunchScreen.storyboard */,
@@ -258,6 +264,8 @@
 			files = (
 				34264D3A20B3DD1F00C43B02 /* ViewController.swift in Sources */,
 				34264D3820B3DD1F00C43B02 /* AppDelegate.swift in Sources */,
+				34264DAA20BD1C1F00C43B02 /* Notification.swift in Sources */,
+				34264DAC20BD1D2800C43B02 /* Draw.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
