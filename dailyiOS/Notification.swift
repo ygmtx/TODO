@@ -27,7 +27,7 @@ class Observer {
         var token: NSObjectProtocol?
         token = center.addObserver(forName: NSNotification.Name(rawValue: theName),
                                     object: nil,
-                                    queue: OperationQueue.main) {_ in
+                                    queue: OperationQueue.init()) {_ in
             print("\n 2.received -- \(Thread.current)")
             sleep(2)
             center.removeObserver(token!)
@@ -52,15 +52,22 @@ class Post {
     var obj = Observer()
 
     init() {
-
         obj.add()
+        self.postNotification()
     }
 
     func postNotification() {
+
         DispatchQueue.global().async {
+            Thread.current.name = "com.ygmtx"
             print("\n post -- \(Thread.current)")
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: theName), object: nil)
-            print("\n post end")
+            let notf = Notification(name: Notification.Name(rawValue: theName))
+//            NotificationCenter.default.post(name: notf.name, object: nil)
+            NotificationQueue.default.enqueue(notf, postingStyle: .asap)
+            print("\n post end -- \(Thread.current)")
+
+            RunLoop.current.add(Port.init(), forMode: .defaultRunLoopMode)
+            RunLoop.current.run()
         }
     }
 

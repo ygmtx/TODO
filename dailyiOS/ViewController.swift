@@ -7,24 +7,16 @@
 //
 
 import UIKit
-import CoreGraphics
 
-class ViewController: UIViewController, CALayerDelegate {
+class ViewController: UIViewController {
+    let post = Post()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.cyan
-
         self.drawImage()
+//        let _ = Post()
 
-        Post().postNotification()
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+//        self.swizzle()
     }
 }
-

@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension ViewController {
+extension ViewController: CALayerDelegate {
 
     func drawImage() {
         let imageView = UIImageView()

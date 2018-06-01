@@ -16,6 +16,7 @@
 		34264DF720BE450F00C43B02 /* dailyiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34264DF620BE450F00C43B02 /* dailyiOSUITests.swift */; };
 		34264E0620BE455900C43B02 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34264E0420BE455900C43B02 /* Notification.swift */; };
 		34264E0720BE455900C43B02 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34264E0520BE455900C43B02 /* Draw.swift */; };
+		34264E0920BFCA8E00C43B02 /* MethodSwizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34264E0820BFCA8E00C43B02 /* MethodSwizzle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		34264DF820BE450F00C43B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34264E0420BE455900C43B02 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		34264E0520BE455900C43B02 /* Draw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		34264E0820BFCA8E00C43B02 /* MethodSwizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSwizzle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				34264DD820BE450D00C43B02 /* ViewController.swift */,
 				34264E0520BE455900C43B02 /* Draw.swift */,
 				34264E0420BE455900C43B02 /* Notification.swift */,
+				34264E0820BFCA8E00C43B02 /* MethodSwizzle.swift */,
 				34264DDA20BE450D00C43B02 /* Main.storyboard */,
 				34264DDD20BE450E00C43B02 /* Assets.xcassets */,
 				34264DDF20BE450E00C43B02 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				34264DD920BE450D00C43B02 /* ViewController.swift in Sources */,
 				34264DD720BE450D00C43B02 /* AppDelegate.swift in Sources */,
+				34264E0920BFCA8E00C43B02 /* MethodSwizzle.swift in Sources */,
 				34264E0620BE455900C43B02 /* Notification.swift in Sources */,
 				34264E0720BE455900C43B02 /* Draw.swift in Sources */,
 			);
