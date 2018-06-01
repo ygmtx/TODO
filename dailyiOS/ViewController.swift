@@ -9,13 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let post = Post()
+
+    var post:Post?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.drawImage()
 
-        self.drawImage()
-//        let _ = Post()
+        post = Post()
 
 //        self.swizzle()
     }

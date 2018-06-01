@@ -23,23 +23,38 @@ class Observer {
                            name: NSNotification.Name(rawValue: theName),
                            object: nil)
 
+        // 3.
+        center.addObserver(self,
+                           selector: #selector(doAnything),
+                           name: NSNotification.Name(rawValue: theName),
+                           object: nil)
+
         // 2.
         var token: NSObjectProtocol?
         token = center.addObserver(forName: NSNotification.Name(rawValue: theName),
-                                    object: nil,
-                                    queue: OperationQueue.init()) {_ in
-            print("\n 2.received -- \(Thread.current)")
-            sleep(2)
-            center.removeObserver(token!)
+                                   object: nil,
+                                   queue: OperationQueue.init()) {_ in
+                                    for i in 0...100 {
+                                        print("\n 2.received -- \(Thread.current) -- \(i)")
+                                    }
+                                    center.removeObserver(token!)
         }
-
     }
 
     @objc func doSomething() {
-//        DispatchQueue.main.async {
-            print("\n 1.received -- \(Thread.current)")
-            sleep(2)
-//        }
+        DispatchQueue.global().async {
+            for i in 0...200 {
+                print("\n 1.received -- \(Thread.current) -- \(i)")
+            }
+        }
+    }
+
+    @objc func doAnything() {
+        DispatchQueue.global().async {
+            for i in 0...200 {
+                print("\n 3.received -- \(Thread.current) -- \(i)")
+            }
+        }
     }
 
     deinit {
@@ -59,15 +74,11 @@ class Post {
     func postNotification() {
 
         DispatchQueue.global().async {
-            Thread.current.name = "com.ygmtx"
+            Thread.current.name = "com.dailyiOS"
             print("\n post -- \(Thread.current)")
             let notf = Notification(name: Notification.Name(rawValue: theName))
-//            NotificationCenter.default.post(name: notf.name, object: nil)
-            NotificationQueue.default.enqueue(notf, postingStyle: .asap)
+            NotificationCenter.default.post(name: notf.name, object: nil)
             print("\n post end -- \(Thread.current)")
-
-            RunLoop.current.add(Port.init(), forMode: .defaultRunLoopMode)
-            RunLoop.current.run()
         }
     }
 
