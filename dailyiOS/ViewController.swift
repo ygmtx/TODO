@@ -16,8 +16,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        self.drawImage()
 
-        post = Post()
+//        post = Post()
 
-//        self.swizzle()
+        self.swizzle()
+
     }
 }
+
+
