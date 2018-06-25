@@ -40,13 +40,13 @@ extension ViewController {
 }
 
 @objc class People: NSObject {
-//    @objc dynamic func run() {
-//        print("run")
-//    }
-}
-
-extension People {
-    @objc func run() {
+    @objc dynamic func run() {
         print("run")
     }
 }
+
+//extension People {
+//    @objc func run() {
+//        print("run")
+//    }
+//}
