@@ -39,6 +39,7 @@ extension ViewController {
     }
 }
 
+//方式1
 @objc class People: NSObject {
     @objc dynamic func run() {
         print("run")
