@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 extension ViewController {
 
@@ -39,8 +40,13 @@ extension ViewController {
 }
 
 @objc class People: NSObject {
+//    @objc dynamic func run() {
+//        print("run")
+//    }
+}
+
+extension People {
     @objc func run() {
         print("run")
     }
 }
-
