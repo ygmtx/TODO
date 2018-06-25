@@ -45,6 +45,7 @@ extension ViewController {
     }
 }
 
+//方式2
 //extension People {
 //    @objc func run() {
 //        print("run")
